@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+
+   
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+       
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Carbon Footprint Tracker</h1>
+        <form id="carbonForm">
+            <label for="miles">Miles driven (car):</label>
+            <input type="number" id="miles" required>
+
+            <label for="electricity">Electricity used (kWh):</label>
+            <input type="number" id="electricity" required>
+
+            <label for="meat">Meat consumption (meals per week):</label>
+            <input type="number" id="meat" required>
+
+            <label for="flights">Miles flown (air travel):</label>
+            <input type="number" id="flights" required>
+
+            <label for="bus">Miles traveled by bus:</label>
+            <input type="number" id="bus" required>
+
+            <label for="train">Miles traveled by train:</label>
+            <input type="number" id="train" required>
+
+            <label for="naturalGas">Natural Gas used (therms):</label>
+            <input type="number" id="naturalGas" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+
+        <div class="results">
+            <h2>Your Carbon Footprint</h2>
+            <p id="FootprintResult"></p>
+            <h3>Emission Breakdown:</h3>
+            <ul id="Breakdown"></ul>
+            <p id="Suggestions"></p>
+            <button id="downloadCSV">Download CSV</button>
+<button id="downloadPDF">Download PDF</button>
+
+        </div>
+
+        <div class="history">
+            <h2>Past Calculations</h2>
+            <ul id="historyList"></ul>
+            <button id="clearHistory">Clear History</button>
+        </div>
+        <div class="chart-container">
+            <canvas id="carbonChart"></canvas>
+        </div>
+        <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+        </label>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+    
+</html>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
